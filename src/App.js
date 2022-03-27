@@ -8,10 +8,10 @@ function clickA() {
       <h1>Event handler</h1>
       <button
         id="button-a"
-        onClick={clickA}
+        onClick={() => clickA()}
         //{() => { alert("welcome");}}
       >
-        click me
+        button
       </button>
     </>
   );
