@@ -1,19 +1,16 @@
-import React from "react";
+import React from 'react';
 
-function clickA() {
-  alert("hello");
+function App() {
 
+  function clickA() {
+    alert('Hello!');
+  }
+  
   return (
-    <>
-      <h1>Event handler</h1>
-      <button
-        id="button-a"
-        onClick={() => clickA()}
-        //{() => { alert("welcome");}}
-      >
-        button
-      </button>
-    </>
+    <button id="button-a" onClick={clickA}>
+      Click me!
+    </button>
   );
 }
-export default clickA;
+
+export default App;
