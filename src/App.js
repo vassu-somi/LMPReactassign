@@ -1,16 +1,17 @@
 import React from "react";
 
 function clickA() {
+  alert("hello");
+
   return (
     <>
       <h1>Event handler</h1>
       <button
         id="button-a"
-        onClick={() => {
-          alert("welcome");
-        }}
+        onClick={clickA}
+        //{() => { alert("welcome");}}
       >
-        Print text
+        click me
       </button>
     </>
   );
