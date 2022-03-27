@@ -8,7 +8,7 @@ function App() {
   
   return (
     <button id="button-a" onClick={clickA}>
-      Click me!
+      clickA
     </button>
   );
 }
